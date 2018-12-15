@@ -1,5 +1,7 @@
 # CdkOverlay
 
+Component Dev Kit Overlay and Portal sandbox based on article [CUSTOM OVERLAYS WITH ANGULAR'S CDK](https://blog.thoughtram.io/angular/2017/11/20/custom-overlays-with-angulars-cdk.html)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
 
 ## Development server
