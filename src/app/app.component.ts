@@ -18,10 +18,6 @@ export class AppComponent {
       }
     });
 
-    ref.afterClose().subscribe(() => console.log('after close'));
-
-    // setTimeout(() => {
-    //   ref.close();
-    // }, 3000);
+    ref.afterClose().subscribe(data => console.log('after close:', data));
   }
 }
