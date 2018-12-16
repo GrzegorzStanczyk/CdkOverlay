@@ -39,7 +39,9 @@ export class OverlayService {
     const injector = this.createInjector(dialogConfig, dialogRef);
     const entryPortal = new ComponentPortal(EntryComponent, null, injector);
 
-    overlayRef.attach(entryPortal);
+    const containerRef = overlayRef.attach(entryPortal);
+    dialogRef.componentInstance = containerRef.instance;
+
     overlayRef.backdropClick().subscribe(() => dialogRef.close());
 
     return dialogRef;
